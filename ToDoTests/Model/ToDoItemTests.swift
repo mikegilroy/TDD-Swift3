@@ -10,17 +10,15 @@ import XCTest
 @testable import ToDo
 
 class ToDoItemTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-		
+	
+	override func setUp() {
+		super.setUp()
 	}
-    
-    override func tearDown() {
-
-        super.tearDown()
-    }
-
+	
+	override func tearDown() {
+		super.tearDown()
+	}
+	
 	func test_Init_WhenGivenTitle_SetsTitle() {
 		let item = ToDoItem(title: "Foo")
 		XCTAssertEqual(item.title, "Foo", "Should set title")
@@ -47,7 +45,7 @@ class ToDoItemTests: XCTestCase {
 		var item2 = ToDoItem(title: "Bar")
 		XCTAssertNotEqual(item1, item2)
 		
-		item1 = ToDoItem(title: "Bar") 
+		item1 = ToDoItem(title: "Bar")
 		item2 = ToDoItem(title: "Foo")
 		XCTAssertNotEqual(item1, item2)
 	}

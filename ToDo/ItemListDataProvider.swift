@@ -44,7 +44,7 @@ class ItemListDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate
 		guard let section = Section(rawValue: indexPath.section) else {
 			fatalError()
 		}
-	
+		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
 		
 		let item: ToDoItem

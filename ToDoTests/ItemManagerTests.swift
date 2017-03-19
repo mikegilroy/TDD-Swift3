@@ -13,14 +13,14 @@ class ItemManagerTests: XCTestCase {
 	
 	var sut: ItemManager!
 	
-    override func setUp() {
+	override func setUp() {
 		sut = ItemManager()
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
+		super.setUp()
+	}
+	
+	override func tearDown() {
+		super.tearDown()
+	}
 	
 	func test_ToDoCount_Initially_IsZero() {
 		XCTAssertEqual(sut.toDoCount, 0)
@@ -82,7 +82,7 @@ class ItemManagerTests: XCTestCase {
 		XCTAssertEqual(sut.toDoCount, 0)
 		XCTAssertEqual(sut.doneCount, 0)
 	}
-
+	
 	func test_Add_WhenItemAlreadyAdded_DoesNotIncreaseCount() {
 		let item = ToDoItem(title: "Foo")
 		sut.add(item)

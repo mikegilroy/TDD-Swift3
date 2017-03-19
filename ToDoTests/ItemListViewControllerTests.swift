@@ -13,17 +13,17 @@ class ItemListViewControllerTests: XCTestCase {
 	
 	var sut: ItemListViewController!
 	
-    override func setUp() {
-        super.setUp()
+	override func setUp() {
+		super.setUp()
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
 		_ = sut.view
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-
+	}
+	
+	override func tearDown() {
+		super.tearDown()
+	}
+	
 	func test_TableViewIsNotNilAfterLoad() {
 		XCTAssertNotNil(sut.tableView)
 	}

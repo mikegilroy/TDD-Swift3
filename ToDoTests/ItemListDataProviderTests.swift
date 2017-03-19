@@ -15,15 +15,15 @@ class ItemListDataProviderTests: XCTestCase {
 	var tableview: UITableView!
 	var controller: ItemListViewController!
 	
-    override func setUp() {
-        super.setUp()
+	override func setUp() {
+		super.setUp()
 		
 		sut = ItemListDataProvider()
 		sut.itemManager = ItemManager()
 		
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		controller = storyboard.instantiateViewController(
-				withIdentifier: "ItemListViewController") as! ItemListViewController
+			withIdentifier: "ItemListViewController") as! ItemListViewController
 		
 		
 		_ = controller.view
@@ -31,12 +31,12 @@ class ItemListDataProviderTests: XCTestCase {
 		tableview = controller.tableView
 		tableview.dataSource = sut
 		tableview.delegate = sut
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-
+	}
+	
+	override func tearDown() {
+		super.tearDown()
+	}
+	
 	
 	func test_NumberOfSections_IsTwo() {
 		XCTAssertEqual(tableview.numberOfSections, 2)

@@ -11,15 +11,15 @@ import CoreLocation
 @testable import ToDo
 
 class LocationTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-
+	
+	override func setUp() {
+		super.setUp()
+	}
+	
+	override func tearDown() {
+		super.tearDown()
+	}
+	
 	func test_Init_GivenName_SetsName() {
 		let location = Location(name: "Foo")
 		XCTAssertEqual(location.name, "Foo", "Should set name")
@@ -84,16 +84,16 @@ class LocationTests: XCTestCase {
 	
 	func test_Locations_WhenLatitudeEqual_AreEqual() {
 		performEqualTestWith(firstName: "Foo",
-		                        secondName: "Foo",
-		                        firstLatLong: (1,1),
-		                        secondLatLong: (1,1))
+		                     secondName: "Foo",
+		                     firstLatLong: (1,1),
+		                     secondLatLong: (1,1))
 	}
 	
 	func test_Locations_WhenLongitudeEqual_AreEqual() {
 		performEqualTestWith(firstName: "Foo",
-		                        secondName: "Foo",
-		                        firstLatLong: (1,1),
-		                        secondLatLong: (1,1))
+		                     secondName: "Foo",
+		                     firstLatLong: (1,1),
+		                     secondLatLong: (1,1))
 	}
 	
 	func test_Locations_WhenNamesEqual_AreEqual() {
@@ -101,10 +101,10 @@ class LocationTests: XCTestCase {
 	}
 	
 	func performEqualTestWith(firstName: String,
-	                             secondName: String,
-	                             firstLatLong: (Double, Double)?,
-	                             secondLatLong: (Double, Double)?,
-	                             line: UInt = #line) {
+	                          secondName: String,
+	                          firstLatLong: (Double, Double)?,
+	                          secondLatLong: (Double, Double)?,
+	                          line: UInt = #line) {
 		
 		var firstCoordinate: CLLocationCoordinate2D? = nil
 		if let firstLatLong = firstLatLong {

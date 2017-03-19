@@ -68,7 +68,7 @@ class ItemCellTests: XCTestCase {
 		XCTAssertNil(cell.dateLabel.text)
 		XCTAssertNil(cell.locationLabel.text)
 	}
-
+	
 }
 
 
