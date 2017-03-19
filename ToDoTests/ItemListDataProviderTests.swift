@@ -174,7 +174,7 @@ extension ItemListDataProviderTests {
 		
 		var cachedItem: ToDoItem?
 		
-		override func configCell(with item: ToDoItem) {
+		override func configCell(with item: ToDoItem, isChecked: Bool) {
 			cachedItem = item
 		}
 	}

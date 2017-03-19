@@ -23,6 +23,7 @@
 		101E52F81E7D130A00878594 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E52F71E7D130A00878594 /* ItemListDataProvider.swift */; };
 		101E52FA1E7D1A3700878594 /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E52F91E7D1A3700878594 /* ItemListDataProviderTests.swift */; };
 		101E52FC1E7D216100878594 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E52FB1E7D216100878594 /* ItemCell.swift */; };
+		109758121E7DF3D3001D0850 /* ItemCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109758111E7DF3D3001D0850 /* ItemCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		101E52F71E7D130A00878594 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		101E52F91E7D1A3700878594 /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
 		101E52FB1E7D216100878594 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		109758111E7DF3D3001D0850 /* ItemCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				101E52F11E7D0CBB00878594 /* ItemListViewControllerTests.swift */,
 				101E52F91E7D1A3700878594 /* ItemListDataProviderTests.swift */,
+				109758111E7DF3D3001D0850 /* ItemCellTests.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109758121E7DF3D3001D0850 /* ItemCellTests.swift in Sources */,
 				101E52FA1E7D1A3700878594 /* ItemListDataProviderTests.swift in Sources */,
 				101E52EE1E7CE10000878594 /* ItemManagerTests.swift in Sources */,
 				101E52EC1E7CDBD800878594 /* LocationTests.swift in Sources */,
@@ -582,6 +586,7 @@
 				101E52DC1E7CD26F00878594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101E52DD1E7CD26F00878594 /* Build configuration list for PBXNativeTarget "ToDoTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +595,7 @@
 				101E52DF1E7CD26F00878594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101E52E01E7CD26F00878594 /* Build configuration list for PBXNativeTarget "ToDoUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +604,7 @@
 				101E52E21E7CD26F00878594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

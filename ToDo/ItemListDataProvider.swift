@@ -51,10 +51,11 @@ class ItemListDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate
 		switch section {
 		case .toDoItems:
 			item = itemManager.item(at: indexPath.row)
+			cell.configCell(with: item)
 		case .doneItems:
 			item = itemManager.doneItem(at: indexPath.row)
+			cell.configCell(with: item, isChecked: true)
 		}
-		cell.configCell(with: item)
 		return cell
 	}
 	
